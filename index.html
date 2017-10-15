@@ -1,154 +1,188 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Victoria Macias - Photographer</title>
+        <meta name="description" content="Victoria Macias Photography"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/et-line-icons.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/theme-startup.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Poppins:100,300,400,600,700" rel="stylesheet" type="text/css">
+        <link href="css/font-poppins.css" rel="stylesheet" type="text/css">
+        <!-- get jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+        // smooth scroll to page anchors
+          $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
 
-  <head>
+              // Make sure this.hash has a value before overriding default behavior
+              if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+                // Store hash
+                var hash = this.hash;
 
-    <title>Victoria Macias.</title>
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                  scrollTop: $(hash).offset().top
+                }, 800, function(){
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+                  // Add hash (#) to URL when done scrolling (default click behavior)
+                  window.location.hash = hash;
+                });
+              } // End if
+            });
+          });
+        </script>
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
 
-    <!-- Custom styles for this template -->
-    <link href="css/grayscale.css" rel="stylesheet">
+    </head>
 
-  </head>
+    <body class="btn-rounded scroll-assist">
 
-  <body id="page-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Victoria Macias</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Social</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
-    <!-- Intro Header -->
-    <header class="masthead">
-      <div class="intro-body">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h1 class="brand-heading">Victoria Macias</h1>
-              <p class="intro-text"><a href="mailto:victoriamacias@ymail.com">victoriamacias@ymail.com</a></p>
-              <a href="#contact" class="btn btn-circle js-scroll-trigger">
-                <i class="fa fa-angle-double-down animated"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+		<div class="main-container">
 
-<!--
-    <section id="about" class="content-section text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>About Grayscale</h2>
-            <p>Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-              <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-            <p>This theme features stock photos by
-              <a href="http://gratisography.com/">Gratisography</a>
-              along with a custom Google Maps skin courtesy of
-              <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-            <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with SASS and LESS files for easy customization!</p>
-          </div>
-        </div>
-      </div>
-    </section>
--->
 
-<!--
-    <section id="download" class="download-section content-section text-center">
-      <div class="container">
-        <div class="col-lg-8 mx-auto">
-          <h2>Download</h2>
-          <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-          <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
-        </div>
-      </div>
-    </section>
--->
 
-    <!-- Contact Section -->
-    <section id="contact" class="content-section text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Social</h2>
-            <p>See my work on social media</p>
-            <ul class="list-inline banner-social-buttons">
-              <li class="list-inline-item">
-                <a href="https://vimeo.com/victoriamacias" class="btn btn-default btn-lg">
-                  <i class="fa fa-vimeo fa-fw"></i>
-                  <span class="network-name">Vimeo</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.facebook.com/victoria.macias.777" class="btn btn-default btn-lg">
-                  <i class="fa fa-facebook fa-fw"></i>
-                  <span class="network-name">Facebook</span>
-                </a>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+			<section class="cover fullscreen image-slider slider-arrow-controls kenburns">
+		        <ul class="slides">
+		            <li class="image-bg pt-xs-240 pb-xs-240">
+		                <div class="background-image-holder">
+		                    <img alt="image" class="background-image" src="img/burns2.jpg">
+		                </div>
+		                <div class="align-bottom">
+		                    <div class="row">
+		                        <div class="col-sm-12">
+		                            <hr class="mb24">
+		                        </div>
+		                    </div>
+		                    <div class="row">
+		                        <div class="col-md-3 col-sm-6 col-xs-12 text-center-xs mb-xs-24">
+		                            <h4 class="uppercase mb0 bold">Victoria Macias</h4>
+		                            <span>Photographer</span>
+		                        </div>
+		                        <div class="col-md-4 hidden-sm hidden-xs">
+		                            <p>Portraits, pets and landscapes.</p>
+		                        </div>
+		                        <div class="col-md-5 col-sm-6 col-xs-12 text-right text-center-xs">
+		                            <a class="btn btn btn-white mt16" href="#contact-form">Contact Me</a>
+		                        </div>
+		                    </div>
 
-    <!--
-    <section id="download" class="download-section content-section text-center">
-      <div class="container">
-        <div class="col-lg-8 mx-auto">
-          <h2>Download Grayscale</h2>
-          <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-          <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
-        </div>
-      </div>
-    </section>
-  -->
+		                </div>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container text-center">
-        <p>Copyright &copy; Victoria Macias 2017</p>
-      </div>
-    </footer>
+		            </li>
+		        </ul>
+		    </section><section class="bg-dark">
+		        <div class="container">
+		            <div class="row mb64 mb-xs-24">
+		                <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
+		                    <h3>Services</h3>
+		                </div>
+		            </div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+		            <div class="row">
+		                <div class="col-sm-6 text-center">
+		                    <div class="feature">
+		                        <div class="text-center">
+		                            <i class="mb40 mb-xs-24 inline-block color-primary et-line-camera icon-lg"></i>
+		                            <h5 class="uppercase">Photography</h5>
+		                        </div>
+		                        <p>Integer commodo imperdiet ipsum sed efficitur. Phasellus vitae luctus felis.</p>
+		                    </div>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+		                </div>
+		                <div class="col-sm-6 text-center">
+		                    <div class="feature">
+		                        <div class="text-center">
+		                            <i class="mb40 mb-xs-24 inline-block color-primary et-line-adjustments icon-lg"></i>
+		                            <h5 class="uppercase">Photo Editing</h5>
+		                        </div>
+		                        <p>Pellentesque tortor dui, gravida ac nunc a, aliquet semper ex.<br></p>
+		                    </div>
 
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+		                </div>
+		            </div>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/grayscale.min.js"></script>
+		        </div>
 
-  </body>
+		    </section><section>
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-sm-12">
+		                    <ul class="flickr-feed masonry masonryFlyIn" data-user-id="56323984@N04" data-album-id="72157687375398980"></ul>
+		                </div>
+		            </div>
+		        </div>
+		    </section><section>
+		        <div class="container" id="contact-form">
+		            <div class="row">
+		                <div class="col-sm-6 col-md-5">
+		                    <h4 class="uppercase">Book a session</h4>
+		                    <hr>
+		                    <p>
+		                        <strong>E:</strong>&nbsp;<a href="victoriamacias@ymail.com">victoriamacias@ymail.com</a><br>
+		                    </p>
+		                </div>
 
+		                <div class="col-sm-6 col-md-5 col-md-offset-1">
+		                    <form action="https://enformed.io/cte3t69r" method="POST">
+		                        <input type="text" class="validate-required" name="name" placeholder="Your Name">
+		                        <input type="text" class="validate-required validate-email" name="email" placeholder="Email Address">
+		                        <textarea class="validate-required" name="message" rows="4" placeholder="Message"></textarea>
+		                        <button type="submit">Send Message</button>
+		                    </form>
+		                </div>
+		            </div>
+		        </div>
+		    </section>
+
+			<footer class="footer-2 bg-dark text-center-xs">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4">
+							<!-- <a href="#"><img class="image-xxs fade-half" alt="Pic" src="img/victoria-macias-logo.png"></a> -->
+              <a href="#"><h4 class="uppercase mb0 bold">Victoria Macias</h4></a>
+						</div>
+
+						<div class="col-sm-4 text-center">
+							<span class="fade-half">
+								©&nbsp; Copyright 2017 <a href="http://simsi.es">Simsies</a> All Rights Reserved.<br></span>
+						</div>
+
+						<div class="col-sm-4 text-right text-center-xs">
+							<ul class="list-inline social-list">
+								<li><a href="https://www.instagram.com/victoriamaciasphotography/"><i class="ti-instagram"></i></a></li>
+								<li><a href="https://vimeo.com/victoriamacias"><i class="ti-vimeo-alt"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+	<script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/flexslider.min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/masonry.min.js"></script>
+        <script src="js/flickr.js"></script>
+        <script src="js/parallax.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
